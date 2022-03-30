@@ -1,0 +1,67 @@
+/* horizontal menu arrangement
+-------------------------------*/
+#tlmenu {
+	margin-left:0;
+	padding:0;
+	margin-right:0
+}
+
+#tlmenu > li {
+	float: left;
+}
+
+/* Preventing submenus to display
+----------------------------------*/
+#tlmenu li ul {
+	display: none;
+}
+
+/* Showing submenus on mouse over
+--------------------------------------*/
+#tlmenu li:hover ul {
+	display: block;
+}
+
+/* Menu display properties
+----------------------------*/
+#tlmenu li a {
+	display: block;
+    color: #0B6138;
+	bacground: #757575;
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+	font-family: arial;
+	font-weight: bold;
+	font-size: 0.8em;
+	padding: 10 10px;
+	text-decoration: none;
+	border-radius: 0px
+}
+#tlmenu li hr {
+	bacground: #000000;
+}
+
+#tlmenu li a:hover {
+	color: #666;
+}
+
+
+/* Submenu display properties
+------------------------------*/
+#tlmenu ul a {
+	color: #fff; 
+	background: #4b545f;
+}
+#tlmenu ul a:hover {
+	color: #58FA58;
+}
+
+
+/* Sub menu vertical arrangement
+----------------------------------*/
+#tlmenu ul {
+	list-style: none;
+	position: absolute;
+	z-index: 999;
+}
